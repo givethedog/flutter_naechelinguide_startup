@@ -9,14 +9,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
         debugShowCheckedModeBanner: false,
-        title: 'home',
-        home: SplashScreen()
-
-
+        home: SplashScreen()               // StartSplashScreen을 홈으로 설정함
     );
   }
 }
