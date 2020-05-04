@@ -24,12 +24,13 @@ class HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateMi
     return new Scaffold(
       appBar: new AppBar(
         title: new Text('NAECHELIN GUIDE'),
-//        bottom: new TabBar(controller: _controller, tabs: <Tab>[
-//          new Tab(text: "NEW"),
-//          new Tab(text: "HOTELS"),
-//          new Tab(text: "FOOD"),
-//          new Tab(text: "FUN"),
-//        ]),
+        bottom: new TabBar(controller: _controller,
+            tabs: <Tab>[                                 // 앱바 살릴려면 이거 복구
+              new Tab(text: "NEW"),
+              new Tab(text: "HOTELS"),
+              new Tab(text: "FOOD"),
+              new Tab(text: "FUN"),
+            ]),
       ),
       body: new TabBarView(
         controller: _controller,
