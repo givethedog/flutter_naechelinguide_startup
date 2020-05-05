@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
-
-
 class HomeScreen extends StatefulWidget {
   @override
   State createState() => new HomeScreenState();
@@ -22,26 +20,31 @@ class HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateMi
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('NAECHELIN GUIDE'),
-        bottom: new TabBar(controller: _controller,
-            tabs: <Tab>[                                 // 앱바 살릴려면 이거 복구
-              new Tab(text: "NEW"),
-              new Tab(text: "HOTELS"),
-              new Tab(text: "FOOD"),
-              new Tab(text: "FUN"),
-            ]),
-      ),
+
+//      appBar: new AppBar(                                         // 앱바 살릴려면 여기부터
+//        title: new Text('NAECHELIN GUIDE'),
+//        bottom: new TabBar(controller: _controller,
+//            tabs: <Tab>[                                 
+//              new Tab(text: "ZHEE"),
+//              new Tab(text: "MUNG"),
+//              new Tab(text: "MOZZI"),
+//              new Tab(text: "GGOMU"),
+//            ]),
+//      ),                                                         // 앱바 살릴려면 여기까지
       body: new TabBarView(
         controller: _controller,
         children: <Widget>[
-          new NewPage(_index),
-          new HotelsPage(_index),
-          new FoodPage(_index),
-          new FunPage(_index),
+          new ZHEE(_index),
+          new MUNG(_index),
+          new MOZZI(_index),
+          new GGOMU(_index),
         ],
       ),
       bottomNavigationBar: new BottomNavigationBar(
+          backgroundColor: Color(0xffefb7b0),
+          selectedItemColor: Color(0xffd74b3b),
+          unselectedItemColor: Color(0xffd74b3b),
+          type: BottomNavigationBarType.fixed,                     // this line can BottomBar has 4 items
           currentIndex: _index,
           onTap: (int _index) {
             setState(() {
@@ -51,39 +54,47 @@ class HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateMi
           items: <BottomNavigationBarItem>[
             new BottomNavigationBarItem(
               icon: new Icon(Icons.home),
-              title: new Text("Home"),
-            ),
-            new BottomNavigationBarItem(
-                icon: Icon(Icons.location_on),
-                title: new Text('Location')
+              title: SizedBox.shrink(),                           // Workaround : BottomNavigationBar without Text
+              //title: new Text("Home"),
 
             ),
             new BottomNavigationBarItem(
-              icon: new Icon(Icons.person),
-              title: new Text("MyPage"),
+              icon: new Icon(Icons.restaurant),
+              title: SizedBox.shrink(),                           // Workaround : BottomNavigationBar without Text
+              //title: new Text("Restaurant"),
             ),
-          ]),
+            new BottomNavigationBarItem(
+                icon: Icon(Icons.location_on),
+              title: SizedBox.shrink(),                           // Workaround : BottomNavigationBar without Text
+                //title: new Text('Location')
+            ),
+            new BottomNavigationBarItem(
+              icon: new Icon(Icons.person),
+              title: SizedBox.shrink(),                           // Workaround : BottomNavigationBar without Text
+              //title: new Text("MyPage"),
+            ),
+                      ]),
     );
   }
 }
 
-class NewPage extends StatelessWidget {
+class ZHEE extends StatelessWidget {
   final int index;
 
-  NewPage(this.index);
+  ZHEE(this.index);
 
   @override
   Widget build(BuildContext context) {
     return new Center(
-      child: new Text('NewPage, index: $index'),
+      child: new Text('ZHEE, index: $index'),
     );
   }
 }
 
-class HotelsPage extends StatelessWidget {
+class MUNG extends StatelessWidget {
   final int index;
 
-  HotelsPage(this.index);
+  MUNG(this.index);
 
   @override
   Widget build(BuildContext context) {
@@ -93,10 +104,10 @@ class HotelsPage extends StatelessWidget {
   }
 }
 
-class FoodPage extends StatelessWidget {
+class MOZZI extends StatelessWidget {
   final int index;
 
-  FoodPage(this.index);
+  MOZZI(this.index);
 
   @override
   Widget build(BuildContext context) {
@@ -106,10 +117,10 @@ class FoodPage extends StatelessWidget {
   }
 }
 
-class FunPage extends StatelessWidget {
+class GGOMU extends StatelessWidget {
   final int index;
 
-  FunPage(this.index);
+  GGOMU(this.index);
 
   @override
   Widget build(BuildContext context) {
