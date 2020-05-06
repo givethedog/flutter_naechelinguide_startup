@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutternaechelinguidestartup/search.dart';
+import 'package:flutternaechelinguidestartup/search_restaurant.dart';
 import 'package:flutternaechelinguidestartup/location.dart';
 import 'package:flutternaechelinguidestartup/list_restaurant.dart';
 
@@ -36,9 +36,9 @@ class HomeScreenState extends State<HomeScreen>
     return Scaffold(
       body: SizedBox.expand(child: child),
       bottomNavigationBar: new BottomNavigationBar(
-          backgroundColor: Color(0xffefb7b0),
-          selectedItemColor: Color(0xffd74b3b),
-          unselectedItemColor: Color(0xffd74b3b),
+          backgroundColor: Color(0xff2a9d8f),
+          selectedItemColor: Color(0xffe9c46a),
+          unselectedItemColor: Color(0xff264653),
           type: BottomNavigationBarType
               .fixed, // this line can BottomBar has 4 items
           currentIndex: _index,

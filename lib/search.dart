@@ -10,7 +10,7 @@ List list = [
   "용산구",
 ];
 
-class SearchRestaurant extends StatelessWidget {
+class SearchRestaurant22 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(

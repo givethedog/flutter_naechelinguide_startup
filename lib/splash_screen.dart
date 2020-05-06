@@ -25,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   Future<bool> _mockCheckForSession() async {
-    await Future.delayed(Duration(milliseconds: 60), () {}); // 원래 6000
+    await Future.delayed(Duration(milliseconds: 6000), () {}); // 원래 6000
 
     return true;
   }
@@ -47,8 +47,8 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Shimmer.fromColors(
-              baseColor: Color(0xffd74b3b),
-              highlightColor: Color(0xffefb7b0),
+              baseColor: Color(0xffe76f51),
+              highlightColor: Color(0xfff4a261),
               child: Container(
                   padding: EdgeInsets.all(20.0),
                   alignment: Alignment.center,
