@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutternaechelinguidestartup/search_restaurant.dart';
 import 'package:flutternaechelinguidestartup/location.dart';
 import 'package:flutternaechelinguidestartup/list_restaurant.dart';
+import 'package:flutternaechelinguidestartup/userpage.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -27,9 +28,7 @@ class HomeScreenState extends State<HomeScreen>
         child = SearchLocation();
         break;
       case 3:
-        child = FlutterLogo(
-          colors: Colors.blue,
-        );
+        child = UserPage();
         break;
     }
 

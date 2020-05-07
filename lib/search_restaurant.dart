@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-// import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutternaechelinguidestartup/constants.dart';
 
 class SearchRestaurant extends StatelessWidget {
@@ -12,11 +11,6 @@ class SearchRestaurant extends StatelessWidget {
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.only(left: 20, top: 40, bottom: 20),
-//            child: Text(
-//              "배불리먹고 돈 많이 벌자",
-//              // ignore: deprecated_member_use
-//              style: Theme.of(context).textTheme.headline,
-//            ),
           ),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
@@ -107,12 +101,20 @@ class RestaurantCard extends StatelessWidget {
             right: 0,
             bottom: 0,
             child: Container(
+              margin: EdgeInsets.only(bottom: 10),
               height: 380,
               width: 250,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(34),
-                color: Color(0xfff4a261),
-              ),
+                  borderRadius: BorderRadius.circular(34),
+                  color: Color(0xffe9c46a),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5),
+                      spreadRadius: 3,
+                      blurRadius: 5,
+                      offset: Offset(2, 2),
+                    ),
+                  ]),
             ),
           ),
           // Rounded background circle
@@ -124,7 +126,7 @@ class RestaurantCard extends StatelessWidget {
               width: 181,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: Color(0xffe76f51),
+                color: Color(0xfff4a261),
               ),
             ),
           ),
@@ -136,7 +138,7 @@ class RestaurantCard extends StatelessWidget {
               height: 181,
               width: 181,
               decoration: BoxDecoration(
-                border: Border.all(width: 2, color: Color(0xffe76f51)),
+                border: Border.all(width: 2, color: Color(0xfff4a261)),
                 shape: BoxShape.circle,
                 image: DecorationImage(
                   fit: BoxFit.cover,
