@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "320558782158",
+    "firebase_url": "https://flutter-naechelinguide-startup.firebaseio.com",
+    "project_id": "flutter-naechelinguide-startup",
+    "storage_bucket": "flutter-naechelinguide-startup.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320558782158:android:b527a0555a4c2c1db0629f",
+        "android_client_info": {
+          "package_name": "co.kr.givethedog.flutternaechelinguidestartup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320558782158-g1kvpdiavk07p4a775qm2lind1on1o86.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc-TZIUPvTOYCWGHQXYYk-I2TK1NXBROU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320558782158-g1kvpdiavk07p4a775qm2lind1on1o86.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
